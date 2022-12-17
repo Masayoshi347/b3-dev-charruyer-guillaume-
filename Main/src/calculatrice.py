@@ -1,4 +1,5 @@
 # calculatrice.py
+import math
 
 def add(a, b):
     """Cette fonction retourne la somme de a et b."""
@@ -27,4 +28,7 @@ def divide(a, b):
     result = a / b
     print(f"{a} / {b} = {result}")
     return result
+
+
+
 
