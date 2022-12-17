@@ -1,13 +1,14 @@
 {
     "python.analysis.extraPaths": [
-        "./Main"
+        "./Main",
+        "./Main/src"
     ],
     "python.testing.unittestArgs": [
         "-v",
         "-s",
         "./test",
         "-p",
-        "*_test.py"
+        "test_*.py"
     ],
     "python.testing.pytestEnabled": false,
     "python.testing.unittestEnabled": true
