@@ -1,26 +1,34 @@
-def calculator():
-    # demande à l'utilisateur de saisir l'opération à effectuer
-    operation = input("Quelle opération souhaitez-vous effectuer? (utilisez +, -, *, /) ")
+# Définition de la fonction calculatrice
+def calculatrice():
+  # Boucle de calcul
+  while True:
+    # Demande de l'opération à réaliser
+    operation = input("Quelle opération souhaitez-vous réaliser (+, -, *, /) ? ")
 
-    # demande à l'utilisateur de saisir les deux nombres sur lesquels l'opération doit être effectuée
-    number_1 = float(input("Entrez le premier nombre: "))
-    number_2 = float(input("Entrez le second nombre: "))
+    # Si l'opération est "fin", on quitte la boucle
+    if operation == "fin":
+      break
 
-    # effectue l'opération en utilisant les deux nombres saisis par l'utilisateur
+    # Demande des nombres
+    nb1 = float(input("Entrez le premier nombre : "))
+    nb2 = float(input("Entrez le deuxième nombre : "))
+
+    # Calcul et affichage du résultat
     if operation == "+":
-        result = number_1 + number_2
-        print(number_1, "+", number_2, "=", result)
+      resultat = nb1 + nb2
+      print(nb1, "+", nb2, "=", resultat)
     elif operation == "-":
-        result = number_1 - number_2
-        print(number_1, "-", number_2, "=", result)
+      resultat = nb1 - nb2
+      print(nb1, "-", nb2, "=", resultat)
     elif operation == "*":
-        result = number_1 * number_2
-        print(number_1, "*", number_2, "=", result)
+      resultat = nb1 * nb2
+      print(nb1, "*", nb2, "=", resultat)
     elif operation == "/":
-        result = number_1 / number_2
-        print(number_1, "/", number_2, "=", result)
+      resultat = nb1 / nb2
+      print(nb1, "/", nb2, "=", resultat)
     else:
-        print("Opération non valide. Veuillez recommencer.")
+      print("Opération non valide")
 
-# appelle la fonction calculator()
-calculator()
+# Appel de la fonction calculatrice
+calculatrice()
+
